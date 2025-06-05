@@ -6,6 +6,7 @@ class proc extends ThirdPartyAppProcess {
   output;
   fps;
   canvas;
+  frameTimes = [];
   current = Store("-- FPS");
 
   constructor(handler, pid, parentPid, app, workingDirectory) {
@@ -38,7 +39,7 @@ class proc extends ThirdPartyAppProcess {
     );
   }
 
-  loop() {
+  loop(callback) {
     this.callback = callback;
     let lastCallbackTime = performance.now();
 
