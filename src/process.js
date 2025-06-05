@@ -10,19 +10,6 @@ class proc extends ThirdPartyAppProcess {
 
   constructor(handler, pid, parentPid, app, workingDirectory) {
     super(handler, pid, parentPid, app, workingDirectory);
-
-    this.shell?.trayHost.createTrayIcon(
-      this.pid,
-      this.app.id,
-      {
-        icon: this.windowIcon(),
-        popup: {
-          width: 150,
-          height: 50,
-        },
-      },
-      FpsCounterTray
-    );
   }
 
   async render() {
@@ -36,6 +23,19 @@ class proc extends ThirdPartyAppProcess {
       this.output.innerText = `${fps} FPS`;
       this.current.set(this.output.innerText);
     });
+
+    this.shell?.trayHost.createTrayIcon(
+      this.pid,
+      this.app.id,
+      {
+        icon: this.windowIcon(),
+        popup: {
+          width: 150,
+          height: 50,
+        },
+      },
+      FpsCounterTray
+    );
   }
 
   loop() {
