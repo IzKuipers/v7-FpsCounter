@@ -1,0 +1,15 @@
+{
+  "metadata": {
+    "name": "FPS Counter",
+    "description": "Shows the current FPS in the corner of the screen",
+    "author": "Izaak Kuipers",
+    "version": "1.0.0",
+    "installLocation": "U:/Applications/IzK_FPSCounter",
+    "appId": "IzK_FPSCounter"
+  },
+  "outFile": "IzK_FPSCounter.arc",
+  "payloadDir": "src",
+  "devPort": 3128,
+  "buildHash": "351b1980",
+  "noHotRelaunch": false
+}

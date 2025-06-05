@@ -1,0 +1,41 @@
+{
+  "metadata": {
+    "name": "FPS Counter",
+    "author": "Izaak Kuipers",
+    "version": "1.0.1",
+    "icon": "@local:fpscounter.png"
+  },
+  "size": {
+    "w": 0,
+    "h": 0
+  },
+  "minSize": {
+    "w": 0,
+    "h": 0
+  },
+  "maxSize": {
+    "w": 0,
+    "h": 0
+  },
+  "position": {
+    "centered": false
+  },
+  "state": {
+    "maximized": false,
+    "minimized": false,
+    "resizable": false,
+    "headless": false,
+    "fullscreen": false
+  },
+  "controls": {
+    "minimize": false,
+    "maximize": false,
+    "close": true
+  },
+  "entrypoint": "main.js",
+  "glass": false,
+  "id": "IzK_FPSCounter",
+  "hidden": false,
+  "core": true,
+  "tpaRevision": 1
+}

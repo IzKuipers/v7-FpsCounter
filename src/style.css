@@ -1,0 +1,55 @@
+/* Scope CSS of your app by prefixing selectors with the app ID: */
+.window#IzK_FPSCounter > div.body {
+	display: flex;
+	justify-content: start;
+	align-items: end;
+	padding: 10px;
+	flex-direction: column;
+	opacity: 0.5 !important;
+}
+
+.window#IzK_FPSCounter *,
+.window#IzK_FPSCounter {
+	pointer-events: none !important;
+	z-index: 100000000000000000000000000000000000000000000000000000000000000000000000000000000 !important;
+}
+
+.window#IzK_FPSCounter.hide {
+	display: none !important;
+}
+
+.window#IzK_FPSCounter p {
+	text-shadow: 
+		-1px -1px #000,
+		1px -1px #000,
+		-1px 1px #000,
+		1px 1px #000;
+	font-size: 18px;
+	font-weight: bold;
+	color: #ff0;
+	text-align: right;
+}
+
+#IzK_FPSCounter.popup {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 10px;
+	padding: 0 10px;
+}
+
+#IzK_FPSCounter.popup button {
+	width: 30px;
+	height: 30px;
+	padding: 0;
+	font-size: 16px;
+	background-color: var(--button-glass-bg);
+}
+
+#IzK_FPSCounter.popup button:hover {
+	background-color: var(--button-glass-hover-bg);
+}
+
+#IzK_FPSCounter.popup button:active {
+	background-color: var(--button-glass-active-bg);
+}
