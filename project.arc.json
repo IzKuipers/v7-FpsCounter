@@ -5,11 +5,14 @@
     "author": "Izaak Kuipers",
     "version": "1.0.0",
     "installLocation": "U:/Applications/IzK_FPSCounter",
-    "appId": "IzK_FPSCounter"
+    "appId": "IzK_FPSCounter",
+    "store": {
+      "image": "fpscounter.png"
+    }
   },
   "outFile": "IzK_FPSCounter.arc",
   "payloadDir": "src",
   "devPort": 3128,
-  "buildHash": "351b1980",
+  "buildHash": "587def70",
   "noHotRelaunch": false
 }
