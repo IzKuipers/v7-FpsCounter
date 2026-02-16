@@ -9,8 +9,8 @@ class proc extends ThirdPartyAppProcess {
   frameTimes = [];
   current = Store("-- FPS");
 
-  constructor(handler, pid, parentPid, app, workingDirectory) {
-    super(handler, pid, parentPid, app, workingDirectory);
+  constructor(pid, parentPid, app, workingDirectory) {
+    super(pid, parentPid, app, "", workingDirectory);
   }
 
   async render() {
@@ -35,7 +35,7 @@ class proc extends ThirdPartyAppProcess {
           height: 50,
         },
       },
-      FpsCounterTray
+      FpsCounterTray,
     );
   }
 
